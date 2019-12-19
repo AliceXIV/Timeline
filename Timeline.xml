@@ -331,7 +331,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="($1+2)*1000">
+          <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="(($1+2)*1000)-${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
@@ -370,7 +370,7 @@
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
-          <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_TextEvent_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="($1+2)*1000">
+          <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_TextEvent_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="(($1+2)*1000)-${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
           </Action>
