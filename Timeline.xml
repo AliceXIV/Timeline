@@ -19,15 +19,12 @@
             <Actions>
               <Action OrderNumber="1" VariableName="alicetInit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="alicet_*" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -36,47 +33,36 @@
             <Actions>
               <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="alicetInit" VariableExpression="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="alicetX" VariableExpression="260" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" VariableOp="SetNumeric" VariableName="alicetY" VariableExpression="200" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" VariableOp="SetNumeric" VariableName="alicetPadX" VariableExpression="40" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="5" VariableOp="SetNumeric" VariableName="alicetToZero" VariableExpression="470" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="6" VariableOp="SetNumeric" VariableName="alicetSecondValue" VariableExpression="20" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="7" VariableOp="SetNumeric" VariableName="alicetModuleSize" VariableExpression="32" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="8" VariableOp="SetString" VariableName="alicetImagePath" VariableExpression="https://alicexiv.github.io/Timeline/Images/" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="9" VariableOp="SetString" VariableName="alicetSoundPath" VariableExpression="https://alicexiv.github.io/Timeline/Sounds/" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="10" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="608f6f4d-b390-4ac5-8f36-ab74b1681d40" TriggerForce="true" ActionType="Trigger" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="11" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="c2790afc-86f3-44c7-9c03-ac0e15c9e437" TriggerForce="regexp" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -85,7 +71,6 @@
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="c2ed7b40-8a71-4694-aabf-54045e81d915" TriggerForce="regexp" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -96,7 +81,6 @@
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="EnableTrigger" TriggerId="08f0d74a-edde-4ba1-b947-4f7b49561770" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -138,42 +122,34 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder ZoneFilterEnabled="True" Id="0b9fe006-b41c-4660-86c4-3329b066f37c" ZoneFilterRegularExpression="The\ Epic\ of\ Alexander\ \(Ultimate\) " Name="The Epic of Alexander (Ultimate)" Enabled="true">
+      <Folder ZoneFilterEnabled="True" Id="0b9fe006-b41c-4660-86c4-3329b066f37c" ZoneFilterRegularExpression="The\ Epic\ Of\ Alexander\ \(Ultimate\)" Name="The Epic Of Alexander (Ultimate)" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="true" Name="Brute Justice" Id="8481bf1e-59ad-462d-83b7-a9005d3e264c" RegularExpression="00:302b:Brute Justice uses J Kick." PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="c1da7d79-dc57-421b-9f26-034c2736a099" TriggerText="AddBase:Brute Justice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:20:Divine Veil:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:42:Rampart:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:77:Sheltron:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:88:Sentinel:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:138:Rampart:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:148:Sheltron:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:145:Reprisal:BruteJustice" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -192,127 +168,97 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="false" Name="Living Liquid" Id="08f0d74a-edde-4ba1-b947-4f7b49561770" RegularExpression=":Living Liquid:" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+          <Trigger Enabled="true" Name="Living Liquid" Id="08f0d74a-edde-4ba1-b947-4f7b49561770" RegularExpression=":Living Liquid:" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="08f0d74a-edde-4ba1-b947-4f7b49561770" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="608f6f4d-b390-4ac5-8f36-ab74b1681d40" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:9:Reprisal:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:20:Divine Veil:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:30:Hallowed Ground:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:45:Rampart:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:50:Sheltron:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:80:Sentinel:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:85:Sheltron:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="10" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:89:Reprisal:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="11" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:125:Sheltron:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="12" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="c1da7d79-dc57-421b-9f26-034c2736a099" TriggerText="AddBase:Living Liquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="13" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:10:Fluid Swing:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="14" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:18:Cascade:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="15" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:30:Hand of Prayer:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="16" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:37:Fluid Swing:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="17" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:42:Embolus:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="18" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:56:Fluid Swing:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="19" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:66:Protean Wave:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="20" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:71:Protean Wave:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="21" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:74:Protean Wave:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="22" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:80:Splash:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="23" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:86:Drainage:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="24" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:92:Cascade:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="25" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:103:Protean Wave:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="26" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:108:Protean Wave:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="27" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:111:Protean Wave:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="28" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:120:Embolus:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="29" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:126:Splash:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="30" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:131:Fluid Swing:LivingLiquid" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -325,15 +271,12 @@
         <Actions>
           <Action OrderNumber="1" AuraImageMode="StretchImage" AuraName="alicet_$3_$1_${_timestamp}" AuraImage="${var:alicetImagePath}$2.png" AuraXIniExpression="${numeric:${var:alicetX}+${var:alicetPadX}}" AuraYIniExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-($1*${var:alicetSecondValue})}" AuraWIniExpression="${var:alicetModuleSize}" AuraHIniExpression="${var:alicetModuleSize}" AuraOIniExpression="100" AuraYTickExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-((($1*1000)-${_sincems})/50)}" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura" ExecutionDelayExpression="${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="2" TextAuraFontSize="12" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="alicet_$3_$1_${_timestamp}" TextAuraExpression="${numeric:$1-${_since}}" TextAuraXIniExpression="${numeric:${var:alicetX}+${var:alicetPadX}}" TextAuraYIniExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-($1*${var:alicetSecondValue})}" TextAuraWIniExpression="${var:alicetModuleSize}" TextAuraHIniExpression="${var:alicetModuleSize}" TextAuraOIniExpression="100" TextAuraYTickExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-((($1*1000)-${_sincems})/50)}" TextAuraUseOutline="True" TextAuraFontName="Lucida Console" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="(($1+2)*1000)-${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
@@ -342,11 +285,9 @@
         <Actions>
           <Action OrderNumber="1" AuraName="alicet_AuraBase" AuraImage="${var:alicetImagePath}xivtimeline_base.png" AuraXIniExpression="${var:alicetX}" AuraYIniExpression="${var:alicetY}" AuraWIniExpression="300" AuraHIniExpression="500" AuraOIniExpression="100" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="2" TextAuraAlignment="BottomLeft" TextAuraFontSize="12" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="alicet_AuraBase" TextAuraExpression="$1" TextAuraXIniExpression="${var:alicetX}" TextAuraYIniExpression="${var:alicetY}" TextAuraWIniExpression="300" TextAuraHIniExpression="500" TextAuraOIniExpression="100" TextAuraUseOutline="True" TextAuraFontName="Lucida Console" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
@@ -355,11 +296,9 @@
         <Actions>
           <Action OrderNumber="1" TextAuraOp="DeactivateAura" TextAuraFontSize="8.25" TextAuraName="$1" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="2" AuraOp="DeactivateAura" AuraName="$1" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="$1" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
@@ -368,15 +307,12 @@
         <Actions>
           <Action OrderNumber="1" TextAuraAlignment="MiddleLeft" TextAuraFontSize="12" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="alicet_TextEvent_$3_$1_${_timestamp}" TextAuraExpression="$2" TextAuraXIniExpression="${numeric:${var:alicetX}+${var:alicetPadX}+${var:alicetModuleSize}}" TextAuraYIniExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-($1*${var:alicetSecondValue})}" TextAuraWIniExpression="200" TextAuraHIniExpression="${var:alicetModuleSize}" TextAuraOIniExpression="100" TextAuraYTickExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-((($1*1000)-${_sincems})/50)}" TextAuraUseOutline="True" TextAuraFontName="Lucida Console" ActionType="TextAura" ExecutionDelayExpression="${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
           <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_TextEvent_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="(($1+2)*1000)-${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
-        <Conditions />
       </Trigger>
     </Triggers>
   </ExportedFolder>
