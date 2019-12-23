@@ -277,12 +277,15 @@
                 <Actions>
                   <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="c1da7d79-dc57-421b-9f26-034c2736a099" TriggerText="AddBase:Brute Justice" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
-                  <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8481bf1e-59ad-462d-83b7-a9005d3e264c" TriggerForce="regexp" ActionType="Trigger">
+                  <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8481bf1e-59ad-462d-83b7-a9005d3e264c" TriggerForce="regexp,parent" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
-                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8146b6db-3991-41e0-9bfc-26b6592ab79d" TriggerForce="regexp" ActionType="Trigger">
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="8146b6db-3991-41e0-9bfc-26b6592ab79d" TriggerForce="regexp,parent" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
