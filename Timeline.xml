@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <TriggernometryExport Version="1">
-  <ExportedFolder Id="ae02dc5e-ad8e-4b10-b837-9a6f74c182b4" Name="Alice's Timelines" Enabled="false">
+  <ExportedFolder Id="ae02dc5e-ad8e-4b10-b837-9a6f74c182b4" Name="Alice's Timelines" Enabled="true">
     <Folders>
       <Folder Id="b4520477-3f08-4261-82f6-1c504220dd3e" Name="Init" Enabled="true">
         <Folders />
