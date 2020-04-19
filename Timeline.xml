@@ -19,11 +19,9 @@
             <Actions>
               <Action OrderNumber="1" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="alicet_*" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -81,23 +79,28 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="Timeline Reset" Id="b6aa8b6c-57df-4c72-ae61-83fd6c6897ba" RegularExpression="21:(.*):40000010">
+          <Trigger Enabled="true" Name="Timeline Reset" Id="b6aa8b6c-57df-4c72-ae61-83fd6c6897ba" RegularExpression="21:(.*):40000010" MutexToCapture="TimelineReset">
             <Actions>
-              <Action OrderNumber="1" VariableName="alicetInit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
+              <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="CancelTrigger" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
-              <Action OrderNumber="2" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+              <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="CancelTrigger" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
-              <Action OrderNumber="3" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="alicet_*" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+              <Action OrderNumber="3" VariableName="alicetInit" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Variable">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
+              </Action>
+              <Action OrderNumber="4" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Aura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="5" AuraOp="DeactivateAuraRegex" AuraName="alicet_*" TextAuraOp="DeactivateAuraRegex" TextAuraFontSize="8.25" TextAuraName="alicet_*" TextAuraFontName="Microsoft Sans Serif" ActionType="TextAura">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="6" MutexName="TimelineReset" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" ActionType="Mutex">
+                <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
@@ -141,7 +144,7 @@
           <Folder Id="859c5ae1-5d48-4a30-b06f-b1ef8782dbdd" Name="Living Liquid" Enabled="true">
             <Folders />
             <Triggers>
-              <Trigger Enabled="false" Name="Living Liquid" Id="08f0d74a-edde-4ba1-b947-4f7b49561770" RegularExpression="The living liquid takes " PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+              <Trigger Enabled="true" Name="Living Liquid" Id="08f0d74a-edde-4ba1-b947-4f7b49561770" RegularExpression="The living liquid takes " PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
                 <Actions>
                   <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerOp="DisableTrigger" TriggerId="08f0d74a-edde-4ba1-b947-4f7b49561770" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
@@ -224,30 +227,39 @@
                 <Actions>
                   <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:9:Reprisal:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:20:Divine Veil:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:30:Hallowed Ground:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:45:Rampart:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:50:Sheltron:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:80:Sentinel:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:85:Sheltron:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:89:Reprisal:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                   <Action OrderNumber="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:125:Sheltron:LivingLiquid" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="true" Grouping="And">
@@ -393,6 +405,138 @@
               </Trigger>
             </Triggers>
           </Folder>
+          <Folder Id="9d777a27-0454-43f5-b03c-bb63694e47a0" Name="Perfect Alexander" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="Perfect Alexander" Id="bb36c772-d471-4a6e-800f-d38eb4d01e2e" RegularExpression="Perfect Alexander:I am Alexander...the Assembled. Look upon the perfection that will be your destruction..." PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                <Actions>
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="c1da7d79-dc57-421b-9f26-034c2736a099" TriggerText="AddBase:Perfect Alexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="a5240592-40fd-419f-85d5-d6f98cbe6281" TriggerZone="${_zone}" TriggerForce="regexp,parent" ActionType="Trigger">
+                    <Condition Enabled="true" Grouping="Or">
+                      <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].job}" ExpressionTypeL="String" ExpressionR="PLD" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                    </Condition>
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7cd69acd-8dc5-45d2-9fac-37aee13a1e38" TriggerZone="${_zone}" TriggerForce="regexp,parent" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="None" Name="Perfect Alexander - Mechanics" Id="7cd69acd-8dc5-45d2-9fac-37aee13a1e38" RegularExpression="">
+                <Actions>
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:24:StillnessMotion:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:27:Freeze:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:34:StillnessMotion:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:45:SpreadStack:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:49:SpreadStack:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:98:StillnessMotion:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:102:StillnessMotion:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:117:Capital Punishment x3:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="9" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:126:Punishment:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="10" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:186:SpreadStack:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="11" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:215:Capital Punishment x3:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="12" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:224:Punishment:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="13" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:251:Irresistible Grace:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="14" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:261:Capital Punishment x3:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="15" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:270:Punishment:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="16" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="7af1218a-19f1-46a8-9782-867af276b22c" TriggerText="AddText:297:Irresistible Grace:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Source="None" Name="Perfect Alexander - PLD" Id="a5240592-40fd-419f-85d5-d6f98cbe6281" RegularExpression="" PrevActionsRefire="Deny" PeriodRefire="Deny" RefirePeriodExpression="10000">
+                <Actions>
+                  <Action OrderNumber="1" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:20:Divine Veil:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:114:Rampart:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="3" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:116:Sentinel:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="4" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:130:Divine Veil:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="5" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:215:Hallowed Ground:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="6" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:245:Reprisal:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="7" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:251:Divine Veil:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                  <Action OrderNumber="8" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="4f3d8d00-08b9-44be-96a2-af9e8a4d6d10" TriggerText="AddEvent:295:Passage of Arms:PerfectAlexander" TriggerZone="${_zone}" ActionType="Trigger">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="true" Grouping="And">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[${_ffxivplayer}].job}" ExpressionTypeL="String" ExpressionR="PLD" ExpressionTypeR="String" ConditionType="StringEqualNocase" />
+                </Condition>
+              </Trigger>
+            </Triggers>
+          </Folder>
         </Folders>
         <Triggers />
       </Folder>
@@ -438,9 +582,11 @@
         <Actions>
           <Action OrderNumber="1" TextAuraAlignment="MiddleLeft" TextAuraFontSize="12" TextAuraForeground="White" TextAuraOutline="Black" TextAuraName="alicet_TextEvent_$3_$1_${_timestamp}" TextAuraExpression="$2" TextAuraXIniExpression="${numeric:${var:alicetX}+${var:alicetPadX}+${var:alicetModuleSize}}" TextAuraYIniExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-($1*${var:alicetSecondValue})}" TextAuraWIniExpression="200" TextAuraHIniExpression="${var:alicetModuleSize}" TextAuraOIniExpression="100" TextAuraYTickExpression="${numeric:${var:alicetY}+${var:alicetToZero}-(${var:alicetModuleSize}/2)-((($1*1000)-${_sincems})/50)}" TextAuraUseOutline="True" TextAuraFontName="Lucida Console" ActionType="TextAura" ExecutionDelayExpression="${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
           <Action OrderNumber="2" TextAuraFontSize="8.25" TextAuraFontName="Microsoft Sans Serif" TriggerId="2d102644-b7a0-43c9-9792-3842f142c1b7" TriggerText="Remove:alicet_TextEvent_$3_$1_${_timestamp}" ActionType="Trigger" ExecutionDelayExpression="(($1+2)*1000)-${numeric:if(0&gt;(($1*1000)-30000),0,(($1*1000)-30000))}">
             <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Action>
         </Actions>
         <Condition Enabled="false" Grouping="Or" />
